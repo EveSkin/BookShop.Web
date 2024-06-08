@@ -1,0 +1,44 @@
+﻿@model BookShop.Web.Models.HomeViewModel
+<div class="card">
+    <div class="card-body">
+        <form class="row g-3 needs-validation" id="#formBook" novalidate>
+            <input type="hidden" id="id" name="id" value="0" />                        
+                        <div class="col-md-6">
+                           <label for="title" class="form-label">Título</label>
+                            <input type="text" class="form-control" id="title" required>
+                            <div class="invalid-feedback">
+                                Debe ingresar un título.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="year" class="form-label">Año</label>
+                           <input type="number" class="form-control" id="year" required>
+                            <div class="invalid-feedback">
+                                Debe ingresar un año.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="numberPages" class="form-label">Número de Páginas</label>
+                            <input type="number" class="form-control" id="numberPages" required>
+                              <div class="invalid-feedback">
+                                 Debe ingresar número de páginas.
+                              </div>
+                          
+                        </div>
+                        <div class="col-md-6">
+                           <label for="idAuthor" class="form-label">Autor</label>
+                          <select class="form-select mb-3 shadow-none" id="idAuthor" required>                                
+                            </select>
+
+                           <div class="invalid-feedback">
+                             Debe seleccionar un autor.
+                           </div>
+                        </div>                                               
+                        <div class="col-12">
+                           <button class="btn btn-primary" type="button" id="btnSave">Guardar</button>
+                        </div>
+                        
+                     </form>
+
+    </div>
+</div>

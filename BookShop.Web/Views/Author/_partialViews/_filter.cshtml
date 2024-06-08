@@ -1,0 +1,57 @@
+﻿@model BookShop.Web.Models.HomeViewModel
+<div class="card">
+    <div class="card-body">
+         <form class="row g-3 needs-validation" novalidate>
+            <input type="hidden" id="id" name="id" value="0" />
+                        <div class="col-md-6">
+                            <label for="identifier" class="form-label">RUT</label>
+                             <input type="text" class="form-control" id="identifier" required>
+                            <div class="invalid-feedback">
+                                Debe ingresar un Rut.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="firstname" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="firstname" required>
+                            <div class="invalid-feedback">
+                                Debe ingresar un nombre.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="lastname" class="form-label">Apellidos</label>
+                           <input type="text" class="form-control" id="lastname" required>
+                            <div class="invalid-feedback">
+                                Debe ingresar apellidos.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="birthdate" class="form-label">Fecha Nacimiento</label>
+                             <input type="date" class="form-control" id="birthdate" required>
+                              <div class="invalid-feedback">
+                                 Debe ingresar una fecha de nacimiento.
+                              </div>
+                          
+                        </div>
+                        <div class="col-md-6">
+                           <label for="cityorigin" class="form-label">Ciudad de Procedencia</label>
+                            <input type="text" class="form-control" id="cityorigin" required>
+                           <div class="invalid-feedback">
+                             Debe ingresar una ciudad de procedencia.
+                           </div>
+                        </div>                       
+                        <div class="col-md-6">
+                           <label for="email" class="form-label">Email</label>
+                           <input type="email" class="form-control" id="email" required>
+                           <div class="invalid-feedback">
+                              Debe ingresar un mail válido.
+                           </div>
+                        </div>
+                       
+                        <div class="col-12">
+                           <button class="btn btn-primary" type="button" id="btnSave">Guardar</button>
+                        </div>
+                        
+                     </form>
+
+    </div>
+</div>

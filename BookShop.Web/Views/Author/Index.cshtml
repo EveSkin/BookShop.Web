@@ -1,0 +1,37 @@
+﻿@model BookShop.Web.Models.HomeViewModel
+@{
+    Layout = "_Layout";
+}
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="iq-navbar-headerGray" style="height: 215px;">
+    <div class="conatiner-fluid content-inner mt-n5 py-10">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header2 row no-gutters py-4">
+                    <div class="col-12 col-sm-4 text-left text-sm-left mb-0">
+                        <h3 class="page-title">Autores</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="conatiner-fluid content-inner mt-n5 py-0">
+    <div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                @await Html.PartialAsync("../Author/_partialViews/_filter.cshtml", Model)                
+            </div>
+        </div>       
+        <div class="row">
+            <div class="col-sm-12 col-lg-12" id="detail">
+                @await Html.PartialAsync("../Author/_partialViews/_list.cshtml", Model)
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/author.js" defer></script>
+
+
