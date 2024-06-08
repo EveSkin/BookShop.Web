@@ -246,7 +246,9 @@ function ValidBookAuthor(id) {
         return el.idAuthor == id;
     }
     );
-    if (newArray.length >= 2) {
+    console.log(newArray.length);
+    
+    if (parseInt(newArray.length) >= 10) {
         valid=0
     }
     return valid;
